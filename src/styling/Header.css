@@ -1,0 +1,64 @@
+*::before,*::after{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+
+}
+
+
+
+a{
+    text-decoration: none;
+    color:#000;
+
+}
+
+.main-logo-img{
+  
+    width:40px;
+    height:40px;
+}
+.logo-img{
+    width:25px;
+    height:25px;
+
+}
+
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1.5rem 3.5rem;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-link li{
+    padding : 10px 0px;
+    margin:0px 10px;
+    position: relative;
+}
+
+.navbar-link li::after{
+    content:'';
+    position:absolute;
+    bottom:0px;
+    left:50%;
+    height:1px;
+    width:0%;
+    background: #000;
+    transition: 0.4s ease-out;
+}
+
+.navbar-link li:hover::after{
+    left:0;
+    width:100%;
+}
+
+.profile-link li{
+    margin:0px 4px;
+}
